@@ -1,0 +1,86 @@
+.custom-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0f0f0f;
+    color: #aaa;
+    padding: 1.5rem 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-left .logo {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .mx-logo {
+    height: 35px;
+  }
+  
+  .tagline {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 20px;
+    color: #fff;
+    margin-left: 10px;
+  }
+  
+  .store-badge {
+    height: 40px;
+    margin: 0 10px;
+  }
+  
+  .qr-code {
+    height: 80px;
+    margin-left: 20px;
+    border: 2px solid #333;
+    padding: 4px;
+    background-color: white;
+  }
+  
+  .footer-right {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .footer-right i{
+background-color: #323031;
+border-radius: 50%;
+padding: 10px;
+font-size: 17px;
+color: white;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons svg {
+    font-size: 20px;
+    background-color: #1c1c1c;
+    padding: 10px;
+    border-radius: 50%;
+    color: #bbb;
+    transition: 0.3s ease;
+  }
+  
+  .social-icons svg:hover {
+    color: #fff;
+  }
+  
+  .system-info {
+    font-size: 0.75rem;
+    color: #666;
+    text-align: right;
+  }
+  

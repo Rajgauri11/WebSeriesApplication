@@ -1,0 +1,123 @@
+/* Main background animation */
+@keyframes backgroundMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff6f61, #ff8e53);
+    background-size: 400% 400%;
+    animation: backgroundMove 10s ease infinite;
+  }
+  
+  /* Form box styles */
+  .form-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 400px;
+    max-width: 400px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Heading animation */
+  .form-box h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-in-out;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Input fields */
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+     margin-top: 20px;
+/* background: transparent; */
+  }
+  
+  .input-field:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.5);
+  }
+  
+  /* Submit button */
+  .submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #e7791f;
+    transform: translateY(-3px);
+  }
+  
+  .submit-btn:active {
+    transform: translateY(1px);
+  }
+  
+  /* Button and input field focus effects */
+  .input-field,
+  .submit-btn {
+    animation: buttonFocus 0.5s ease;
+  }
+  
+  @keyframes buttonFocus {
+    0% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
